@@ -9,7 +9,7 @@ def information_button():
     response_new = {}
     for i in keys:
         response_new[i] = response[i]
-    with open('information.txt','w') as file:
+    with open('inf.txt','w') as file:
         json.dump(response_new,file,indent=3)
 window = Tk()
 window.title('Репозитории')
